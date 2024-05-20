@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="MongoDB.Bson" Version="2.25.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.25.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Controllers\" />
+    <None Remove="Entities\" />
+    <None Remove="Settings\" />
+    <None Remove="Dtos\" />
+    <None Remove="Dtos\CategoryDtos\" />
+    <None Remove="Dtos\ProductDtos\" />
+    <None Remove="Dtos\ProductImageDtos\" />
+    <None Remove="Dtos\ProductDetailDtos\" />
+    <None Remove="Mapping\" />
+    <None Remove="Services\" />
+    <None Remove="Services\CategoryServices\" />
+    <None Remove="Services\ProductServices\" />
+    <None Remove="Services\ProductImageServices\" />
+    <None Remove="Services\ProductDetailServices\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Settings\" />
+    <Folder Include="Dtos\" />
+    <Folder Include="Dtos\CategoryDtos\" />
+    <Folder Include="Dtos\ProductDtos\" />
+    <Folder Include="Dtos\ProductImageDtos\" />
+    <Folder Include="Dtos\ProductDetailDtos\" />
+    <Folder Include="Mapping\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\CategoryServices\" />
+    <Folder Include="Services\ProductServices\" />
+    <Folder Include="Services\ProductImageServices\" />
+    <Folder Include="Services\ProductDetailServices\" />
+  </ItemGroup>
+</Project>
