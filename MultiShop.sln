@@ -10,6 +10,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Catalog", "MultiShop\Services\Catalog\MultiShop.Catalog\MultiShop.Catalog.csproj", "{E8963789-3161-4F68-8E3D-A96A7B0C2BD6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Discount", "Discount", "{0D02A188-76CF-4456-8B1D-96F324CFBF3E}"
+	ProjectSection(SolutionItems) = preProject
+		deneme.txt = deneme.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
