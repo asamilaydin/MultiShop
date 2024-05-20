@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1706.5
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop", "MultiShop\MultiShop.csproj", "{7ED9933F-F0A7-416B-BBB7-A342305E5BB2}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{763D3A43-F29C-4873-B0FB-DDB05599D057}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{2217716E-1C28-4138-969F-50B1BCE394FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Catalog", "Services\Catalog\MultiShop.Catalog\MultiShop.Catalog.csproj", "{E8963789-3161-4F68-8E3D-A96A7B0C2BD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +15,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7ED9933F-F0A7-416B-BBB7-A342305E5BB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7ED9933F-F0A7-416B-BBB7-A342305E5BB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7ED9933F-F0A7-416B-BBB7-A342305E5BB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7ED9933F-F0A7-416B-BBB7-A342305E5BB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8963789-3161-4F68-8E3D-A96A7B0C2BD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8963789-3161-4F68-8E3D-A96A7B0C2BD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8963789-3161-4F68-8E3D-A96A7B0C2BD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8963789-3161-4F68-8E3D-A96A7B0C2BD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C5CEA00E-A6B0-4202-B1E4-CEDA0185D8EE}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2217716E-1C28-4138-969F-50B1BCE394FC} = {763D3A43-F29C-4873-B0FB-DDB05599D057}
+		{E8963789-3161-4F68-8E3D-A96A7B0C2BD6} = {2217716E-1C28-4138-969F-50B1BCE394FC}
 	EndGlobalSection
 EndGlobal
