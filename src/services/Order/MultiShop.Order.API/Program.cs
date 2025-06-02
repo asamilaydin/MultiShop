@@ -1,10 +1,9 @@
 using Microsoft.OpenApi.Models;
 using MultiShop.Order.Application;
 using MultiShop.Order.Infrastructure;
+using MultiShop.Order.API.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.AddControllers();
 
 builder.Services.AddApplicationServices();
 
@@ -33,7 +32,8 @@ if (app.Environment.IsDevelopment())
     });
 }
 
-app.UseAuthorization();
-app.MapControllers();
+// app.UseAuthorization();
+
+app.MapOrderEndpoints();
 
 app.Run();

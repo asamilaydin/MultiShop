@@ -1,12 +1,13 @@
 using MediatR;
 using MultiShop.Order.Application.Dtos;
+using System;
 using System.Collections.Generic;
 
 namespace MultiShop.Order.Application.Features.OrderFeatures.Commands.CreateOrder
 {
     public class CreateOrderCommand : IRequest<Guid>
     {
-        public string UserId { get; set; }
+        public Guid UserId { get; set; }
         public AddressDto ShippingAddress { get; set; }
         public List<CreateOrderDetailDto> OrderItems { get; set; }
 

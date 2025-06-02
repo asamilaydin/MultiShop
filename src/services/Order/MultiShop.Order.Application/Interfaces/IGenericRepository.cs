@@ -13,5 +13,6 @@ namespace MultiShop.Order.Application.Interfaces
         void Update(T entity);
         void Remove(T entity);
         void RemoveRange(IEnumerable<T> entities);
+        Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
     }
 }

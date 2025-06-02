@@ -12,7 +12,7 @@ namespace MultiShop.Order.Infrastructure
         public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<OrderDbContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("OrderDbConnection")));
+                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<IOrderRepository, OrderRepository>();

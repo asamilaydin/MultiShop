@@ -2,6 +2,7 @@ using AutoMapper;
 using MediatR;
 using MultiShop.Order.Application.Interfaces;
 using MultiShop.Order.Domain.Entities;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -29,6 +30,8 @@ namespace MultiShop.Order.Application.Features.OrderFeatures.Commands.CreateOrde
             }
 
             await _orderRepository.AddAsync(order);
+            await _orderRepository.SaveChangesAsync(cancellationToken);
+            
             return order.Id;
         }
     }

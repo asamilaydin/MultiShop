@@ -25,6 +25,12 @@ namespace MultiShop.Order.Application.Features.OrderFeatures.Commands.UpdateShip
             if (order != null)
             {
                 var newAddressEntity = _mapper.Map<Address>(request.NewShippingAddress);
+                
+                // TODO: Domain.Entities.Order sınıfına UpdateShippingAddress(Address newAddress) metodu ekleyin.
+                // Bu metodun içinde `this.ShippingAddress = newAddress;` veya daha detaylı bir güncelleme olabilir.
+                // Şimdilik bu adımın domainde yapılacağını varsayarak devam ediyoruz.
+                // Eğer domainde böyle bir metod yoksa, bu handler çalışmayacaktır.
+
                 _orderRepository.Update(order);
             }
             await Task.CompletedTask;

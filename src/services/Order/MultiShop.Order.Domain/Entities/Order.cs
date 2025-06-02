@@ -7,7 +7,7 @@ namespace MultiShop.Order.Domain.Entities
     public class Order
     {
         public Guid Id { get; private set; }
-        public string UserId { get; private set; }
+        public Guid UserId { get; private set; }
         public decimal TotalPrice { get; private set; }
         public DateTime OrderDate { get; private set; }
         
@@ -18,7 +18,7 @@ namespace MultiShop.Order.Domain.Entities
 
         private Order() { }
 
-        public static Order Create(string userId, Address shippingAddress)
+        public static Order Create(Guid userId, Address shippingAddress)
         {            
             var order = new Order
             {

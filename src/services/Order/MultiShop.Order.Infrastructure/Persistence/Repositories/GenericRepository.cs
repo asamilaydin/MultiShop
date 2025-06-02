@@ -57,6 +57,11 @@ namespace MultiShop.Order.Infrastructure.Persistence.Repositories
             _context.Entry(entity).State = EntityState.Modified;
         }
 
+        public async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            return await _context.SaveChangesAsync(cancellationToken);
+        }
+
         // SaveChangesAsync genellikle UnitOfWork veya doğrudan DbContext üzerinden çağrılır.
         // Eğer repository seviyesinde istenirse:
         // public async Task<int> SaveChangesAsync()
