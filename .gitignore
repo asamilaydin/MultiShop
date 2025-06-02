@@ -1,0 +1,75 @@
+# Prerequisites
+*.vs/**/
+*.user
+*.lock.json
+*.suo
+*.tmp
+*.log
+*.Generated.cs
+
+# User-specific files
+*.DS_Store
+*.AppleDouble
+.LSOverride
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Rr]elease/
+[Dd]ebug/
+[Ll]ogs/
+[Tt]est[Rr]esults/
+
+# Rider specific
+!.idea/workspace.xml
+!.idea/.name
+.idea/shelf/
+
+# VS Code specific
+.vscode/
+
+# Rider temporary files
+*.sln.iml
+
+# Tools
+*.dotCover
+*.resharper
+*.[Rr]e[Ss]harper
+
+# Backup files
+*.bak
+
+# NuGet Packages
+# Typically, NuGet packages are restored and not committed.
+# However, if you have a local packages folder, uncomment the next line:
+# **/packages/*
+# except for *.nupkg files that are part of the project (e.g. for local NuGet feeds)
+# !**/packages/*.nupkg
+
+# Environment files - specific to your setup, ensure these are not committed if they contain secrets
+# appsettings.Development.json # (Consider if this contains secrets; often better to use user secrets for development)
+# launchSettings.json # (If it contains environment-specific settings not suitable for all users)
+
+# Specific to .NET User Secrets, which should not be committed.
+# The secrets.json file is stored in a path outside of the project.
+# However, the "userSecretsId" in the .csproj is fine.
+
+# Cache files
+*.cache
+*.output
+*.pdb
+
+# OS generated files
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# If you are using Docker
+*.dockerignore
+Dockerfile.debug.*
+Dockerfile.Release.*
+
+# If you are using EF Core migrations and don't want to commit the model snapshot for some reason
+# (generally recommended to commit it)
+# Migrations/*-*-*-*.Designer.cs 
